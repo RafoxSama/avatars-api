@@ -153,7 +153,7 @@ gulp.task('assets', function() {
 //
 
 gulp.task('clean', function() {
-  return del(paths.cleanPath, { sync: true });
+  return del.sync(paths.cleanPath);
 });
 
 
