@@ -18,7 +18,7 @@ faviconPath   = path.join(basePath, 'app', 'favicon.ico')
 app.engine('.html', require('ejs').__express)
 app.use(favicon(faviconPath))
 app.get '/', (req, res) ->
-  res.redirect('http://avatars.adorable.io')
+  res.redirect('http://youngbox.fr')
 if process.env.NODE_ENV == 'production'
   app.use(require('./tracker'))
 app.use('/avatar', require('./routes/v1'))
